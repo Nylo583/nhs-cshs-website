@@ -1,0 +1,175 @@
+/* @font-face */
+@font-face {
+    font-family: "test";
+    src: url("assets/MusticaPro-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "robo-med";
+    src: url("assets/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "robo-reg";
+    src: url("assets/Roboto-Regular.ttf");
+}
+
+/* @keyframes */
+
+/* */
+* {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* navbar (shared) */
+
+div.navbar {
+    background-color: #242424; 
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    height: 75px;
+    padding: 15px 0px 15px 0px;
+    display:inline-flex;
+    overflow-y: hidden;
+    font-family: "test";
+    color: white;
+}
+
+img.logo {
+    height: 100%;
+    width:100%; /* clipping fix */
+    object-fit: contain;
+    /* background-color: red; */
+    margin-right: 15px
+}
+
+div.navbar a {
+    overflow: hidden;
+}
+
+div.navbar h1 {
+    font-size: 2.5em;
+    /* background-color: blue; */
+    margin: 0;
+    position: relative;
+    padding: 10px 0 0 0;
+}
+
+div.links {
+    position: relative;
+    left: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+div.links ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+div.links ul li {
+    float: right;
+    
+}
+
+div.links ul li a.navlink {
+    margin:25px;  
+    color: #FFFFFF;
+    font-size: 1.75em;
+    text-decoration: none;
+    font-family: "robo-med";
+    transition: color .5s;
+}
+
+div.links ul li a.navlink:hover {
+    color:#38aeb5;
+}
+
+/* footer (shared) */
+div.footer {
+    width: 100%;
+    background-color: #0a0a0a;
+    text-align: center;
+    height: 40px;
+}
+
+div.footer p.copyright {
+    font-family: "robo-med";
+    font-size: 20px;
+    color: white;
+    transform: translateY(50%);
+}
+
+
+/* index.html */
+body.index {
+    background-color: rgb(26, 26, 26);
+}
+
+div.title {
+    display: flex;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+div.title img {
+    position: relative;
+    height:650px;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+
+div.title h1 {
+    font-family: "robo-med";
+    font-size: 60px;
+    position: relative;
+    top: 50%;
+    width: 33%;
+    transform: translateY(45%);
+    color: white;
+    text-align: center;
+}
+
+img.recent_news {
+    width: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.post {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background-color: #490000;
+    width:70%;
+    height:240px;
+    margin-bottom: 3%;
+}
+
+div.post img {
+    height: 100%;
+    object-fit: contain;
+}
+
+div.post .embedtext {
+    font-family: "robo-reg";
+    font-size: 24px;
+    color:#FFFFFF;
+    margin: 16px;
+    width: max-content;
+    overflow: hidden;
+}
+
+div.post h1 {
+    font-size: 32px;
+}
+
