@@ -4,12 +4,13 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 
 <body class="index"> 
 
     
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <a href="index.html"><img src="assets\placeholder_logo.png" class="logo"></a>
         <h1>Computer Science Honor Society</h1>
         <div class="links">
@@ -28,7 +29,7 @@
         <h1 id="right">Honor Society MI</h1>
     </div>
 
-    <img class="recent_news" src="assets\recent_news.png">
+    <img class="recent_news" src="assets\recent_news.png" id="rcn" onclick="scrollPost()">
 
     <!--maybe show latest 3?-->
     
@@ -80,6 +81,11 @@
         </p>
     </div>
 
+
+    <!--sticky-->
+    <div class="scrollTop">
+        <img src="assets\scrollTop.png" id="scrollTop" onclick="scroll2top()">
+    </div>
 </body>
 
 </html>

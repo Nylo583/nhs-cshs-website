@@ -107,6 +107,20 @@ div.footer p.copyright {
     transform: translateY(50%);
 }
 
+/* top scroll box (shared) */
+.scrollTop {
+    position:fixed;
+    bottom: 2vh;
+    right: 2vh;
+    width: 4vw;
+    height: fit-content;
+    object-fit: contain;
+}
+
+.scrollTop img {
+    width: 100%;
+}
+
 
 /* index.html */
 body.index {
@@ -180,7 +194,7 @@ div.post img {
 
 div.post .embedtext {
     font-family: "robo-reg";
-    font-size: 1.25vw;
+    font-size: 16px;
     color:#FFFFFF;
     margin: 16px;
     width: max-content;
@@ -188,6 +202,6 @@ div.post .embedtext {
 }
 
 div.post h1 {
-    font-size: 2.25vw;
+    font-size: 24px;
 }
 
