@@ -29,7 +29,7 @@ div.navbar {
     left: 0%;
     width: 100%;
     top: 0%;
-    height: 75px;
+    height: 7.5vh;
     padding: 15px 0px 15px 0px;
     display:inline-flex;
     overflow-y: hidden;
@@ -51,24 +51,23 @@ div.navbar a {
 }
 
 div.navbar h1 {
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     margin: 0;
     position: relative;
-    padding: 10px 0 0 0;
-    top: 50%;
+    padding: 0 0 0 0;
+    top: 25%;
     transform: translateY(-50%);
+    align-self: center;
 }
 
 div.links {
     position: relative;
-    width: max-content;
-    right: -4%;
+    width: fit-content;
+    left: 30vw;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    background-color: green;
-
 }
 
 div.links ul {
@@ -83,7 +82,7 @@ div.links ul li {
 div.links ul li a.navlink {
     margin:25px;  
     color: #FFFFFF;
-    font-size: 1.75em;
+    font-size: 1.25vw;
     text-decoration: none;
     font-family: "robo-med";
     transition: color .25s;
@@ -119,13 +118,14 @@ div.title {
     overflow: hidden;
     vertical-align: middle;
     position: relative;
-    top: 5vh;
+    top: 15vh;
 }
 
 div.title img {
     position: relative;
     width: 25%;
     object-fit: contain;
+    margin: 0 5vw 0 5vw;
 }
 
 div.title h1 {
@@ -143,7 +143,7 @@ div.title h1 {
 
 img.recent_news {
     width: 20%;
-    margin-top: 15vh;
+    margin-top: 25vh;
     margin-bottom: 5%;
     position: relative;
     left: 50%;
