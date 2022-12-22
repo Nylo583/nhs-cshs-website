@@ -85,7 +85,7 @@ div.links ul li a.navlink {
     font-size: 1.25vw;
     text-decoration: none;
     font-family: "robo-med";
-    transition: color .25s;
+    transition: color 0.5s ease-in-out;
 }
 
 div.links ul li a.navlink:hover {
@@ -123,7 +123,7 @@ div.footer p.copyright {
 
 
 /* index.html */
-body.index {
+body {
     background-color: rgb(26, 26, 26);
 }
 
@@ -205,3 +205,46 @@ div.post h1 {
     font-size: 24px;
 }
 
+/* about */
+.about .about_container {
+    width: 80%;
+    font-family: "robo-med";
+    color: white;
+    position: relative;
+    left: 10%;
+    display:block;
+}
+
+.about_container .header {
+    font-size: 3.5vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.about_container .row {
+    font-size: 1.5vw;
+    margin: 3vh 0 3vh 0;
+    height: min-content;
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.about_container .row img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.about_container p {
+    width: max-content;
+    height: 100%;
+    margin: 0 1.5vw 0 1.5vw;
+    padding: 1.5vh 0 1.5vh 0;
+}
+.about_container #row0 {
+    height: 50vh;
+}
+.about_container #row1 {
+    height: 60vh;
+    justify-content: right;
+}
