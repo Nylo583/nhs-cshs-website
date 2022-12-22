@@ -61,11 +61,14 @@ div.navbar h1 {
 
 div.links {
     position: relative;
-    right: 0%;
+    width: max-content;
+    right: -4%;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
+    background-color: green;
+
 }
 
 div.links ul {
@@ -75,7 +78,6 @@ div.links ul {
 
 div.links ul li {
     float: right;
-    
 }
 
 div.links ul li a.navlink {
@@ -117,6 +119,7 @@ div.title {
     overflow: hidden;
     vertical-align: middle;
     position: relative;
+    top: 5vh;
 }
 
 div.title img {
@@ -140,7 +143,7 @@ div.title h1 {
 
 img.recent_news {
     width: 20%;
-    margin-top: 5%;
+    margin-top: 15vh;
     margin-bottom: 5%;
     position: relative;
     left: 50%;
