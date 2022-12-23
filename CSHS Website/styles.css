@@ -205,6 +205,100 @@ div.post h1 {
     font-size: 24px;
 }
 
+/* chapters */
+.chapter_container {
+    width: 90%;
+    font-family: "robo-med";
+    color: white;
+    position: relative;
+    left: 5%;
+    display: inline-block;
+}
+
+.chapter_container .header {
+    position: relative;
+    left: 5%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-size: 3.5vw;
+}
+
+.chapter_container .header p {
+    font-size: 1.75vw;
+}
+
+.pair {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    width: 100%;
+}
+
+.chapter_container .chapter_block {
+    height: 25vh;
+    width: 45%;
+    padding: 1vw 1vw 1vw 1vw;
+    margin: 1vw;
+    background-color: black;
+    border-radius: 2vw;
+    border: 2px solid white;
+    box-shadow: 0.3vw 0.3vw white;
+    transition: 1s ease-out 0.25s;
+    scale: 100%;
+}
+
+.chapter_block:hover {
+    rotate: 1deg;
+    scale: 101%;
+}
+
+.chapter_block .img_dummy {
+    height:100%;
+    width: 35%;
+    margin-right: 0.5vw;
+    overflow: hidden;
+    float: left;
+}
+
+.chapter_block .img_dummy img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.chapter_body {
+    left: 55%;
+}
+
+.chapter_body h2 {
+    font-size: 2vw;
+}
+
+.chapter_body p {
+    font-size: 1vw;
+    width: 100%;
+}
+
+#block0 {
+    background-color: #5c392e;
+}
+
+#block1 {
+    background-color: #363661;
+}
+
+#block2 {
+    background-color: #3e743e;
+}
+
+#block3 {
+    background-color: #474726;
+}
+
+#block4 {
+    background-color: #4d274d;
+}
+
 /* about */
 .about .about_container {
     width: 80%;
