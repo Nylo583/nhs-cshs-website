@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    {{metadata|safe}}
+    <title>Home - CSHS</title>
+    <script src="/static/scripts/index.js" defer></script>
+</head>
+
+<body class="index"> 
+
+    {{nav|safe}}
+
+    <div class="title">
+        <h1 id="left">Computer Science</h1>
+        <img src="/static/assets/placeholder_logo.png">
+        <h1 id="right">Honor Society MI</h1>
+    </div>
+
+    <img class="recent_news" src="/static/assets/recent_news.png" id="rcn" onmouseover="scrollPost()">
+    
+    {%for i in range(3)%}
+        <div class="post" id="post{{i}}">
+            <img src="/static/assets/{{posts[i]['img']}}.webp" alt="{{posts[i]['imgDesc']}}" class="postimg">
+            <div class="embedtext">
+                <h1 class="posttitle">{{posts[i]['title']}}</h1>
+                <h3 class="posttime">{{posts[i]['timestamp']}}</h3>
+                <p class="postbody">{{posts[i]['body']|safe}}</p>
+            </div>
+        </div>
+    {%endfor%}
+
+    {{footer|safe}}
+    {{scrollTop|safe}}
+</body>
+
+</html>
