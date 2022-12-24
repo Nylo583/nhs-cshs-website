@@ -1,17 +1,17 @@
 /* @font-face */
 @font-face {
     font-family: "test";
-    src: url("assets/MusticaPro-SemiBold.otf");
+    src: url("/static/assets/MusticaPro-SemiBold.otf");
 }
 
 @font-face {
     font-family: "robo-med";
-    src: url("assets/Roboto-Medium.ttf");
+    src: url("/static/assets/Roboto-Medium.ttf");
 }
 
 @font-face {
     font-family: "robo-reg";
-    src: url("assets/Roboto-Regular.ttf");
+    src: url("/static/assets/Roboto-Regular.ttf");
 }
 
 /* @keyframes */
