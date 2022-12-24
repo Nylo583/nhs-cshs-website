@@ -1,0 +1,344 @@
+/* @font-face */
+@font-face {
+    font-family: "test";
+    src: url("/static/assets/MusticaPro-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "robo-med";
+    src: url("/static/assets/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "robo-reg";
+    src: url("/static/assets/Roboto-Regular.ttf");
+}
+
+/* @keyframes */
+
+/* */
+* {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* navbar (shared) */
+
+div.navbar {
+    background-color: #242424; 
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    height: 7.5vh;
+    padding: 15px 0px 15px 0px;
+    display:inline-flex;
+    overflow-y: hidden;
+    font-family: "test";
+    color: white;
+}
+
+img.logo {
+    height: 100%;
+    width:100%; /* clipping fix */
+    object-fit: contain;
+    /* background-color: red; */
+    margin-right: 15px
+}
+
+div.navbar a {
+    overflow: hidden;
+    width: 7.5%;
+}
+
+div.navbar h1 {
+    font-size: 1.5vw;
+    margin: 0;
+    position: relative;
+    padding: 0 0 0 0;
+    top: 25%;
+    transform: translateY(-50%);
+    align-self: center;
+}
+
+div.links {
+    position: relative;
+    width: fit-content;
+    left: 30vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+div.links ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+div.links ul li {
+    float: right;
+}
+
+div.links ul li a.navlink {
+    margin:25px;  
+    color: #FFFFFF;
+    font-size: 1.25vw;
+    text-decoration: none;
+    font-family: "robo-med";
+    transition: color 0.5s ease-in-out;
+}
+
+div.links ul li a.navlink:hover {
+    color:#38aeb5;
+}
+
+/* footer (shared) */
+div.footer {
+    width: 100%;
+    background-color: #0a0a0a;
+    text-align: center;
+    height: 40px;
+}
+
+div.footer p.copyright {
+    font-family: "robo-med";
+    font-size: 20px;
+    color: white;
+    transform: translateY(50%);
+}
+
+/* top scroll box (shared) */
+.scrollTop {
+    position:fixed;
+    bottom: 2vh;
+    right: 2vh;
+    width: 4vw;
+    height: fit-content;
+    object-fit: contain;
+}
+
+.scrollTop img {
+    width: 100%;
+}
+
+
+/* index.html */
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+div.title {
+    display: flex;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    top: 15vh;
+}
+
+div.title img {
+    position: relative;
+    width: 25%;
+    object-fit: contain;
+    margin: 0 5vw 0 5vw;
+}
+
+div.title h1 {
+    font-family: "robo-med";
+    font-size: 3.75vw;
+    position: relative;
+    top: 50%;
+    width: 37.5%;
+    transform: translateY(42.5%);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+img.recent_news {
+    width: 20%;
+    margin-top: 25vh;
+    margin-bottom: 5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.post {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width:70%;
+    height:240px;
+    margin-bottom: 3%;
+}
+
+#post0 {
+    background-color: #338a8f;
+}
+
+#post1 {
+    background-color: #741f77;
+}
+
+#post2 {
+    background-color: #5e1919;
+}
+
+div.post img {
+    height: 100%;
+    object-fit: contain;
+}
+
+div.post .embedtext {
+    font-family: "robo-reg";
+    font-size: 16px;
+    color:#FFFFFF;
+    margin: 16px;
+    width: max-content;
+    overflow: hidden;
+}
+
+div.post h1 {
+    font-size: 24px;
+}
+
+/* chapters */
+.chapter_container {
+    width: 90%;
+    font-family: "robo-med";
+    color: white;
+    position: relative;
+    left: 5%;
+    display: inline-block;
+}
+
+.chapter_container .header {
+    position: relative;
+    left: 5%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-size: 3.5vw;
+}
+
+.chapter_container .header p {
+    font-size: 1.75vw;
+}
+
+.pair {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    width: 100%;
+}
+
+.chapter_container .chapter_block {
+    height: 25vh;
+    width: 45%;
+    padding: 1vw 1vw 1vw 1vw;
+    margin: 1vw;
+    background-color: black;
+    border-radius: 2vw;
+    border: 2px solid white;
+    box-shadow: 0.3vw 0.3vw white;
+    transition: 1s ease-out 0.25s;
+    scale: 100%;
+}
+
+.chapter_block:hover {
+    rotate: 1deg;
+    scale: 101%;
+}
+
+.chapter_block .img_dummy {
+    height:100%;
+    width: 35%;
+    margin-right: 0.5vw;
+    overflow: hidden;
+    float: left;
+}
+
+.chapter_block .img_dummy img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.chapter_body {
+    left: 55%;
+}
+
+.chapter_body h2 {
+    font-size: 2vw;
+}
+
+.chapter_body p {
+    font-size: 1vw;
+    width: 100%;
+}
+
+#block0 {
+    background-color: #5c392e;
+}
+
+#block1 {
+    background-color: #363661;
+}
+
+#block2 {
+    background-color: #3e743e;
+}
+
+#block3 {
+    background-color: #474726;
+}
+
+#block4 {
+    background-color: #4d274d;
+}
+
+/* about */
+.about .about_container {
+    width: 80%;
+    font-family: "robo-med";
+    color: white;
+    position: relative;
+    left: 10%;
+    display:block;
+}
+
+.about_container .header {
+    font-size: 3.5vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.about_container .row {
+    font-size: 1.5vw;
+    margin: 3vh 0 3vh 0;
+    height: min-content;
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.about_container .row img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.about_container p {
+    width: max-content;
+    height: 100%;
+    margin: 0 1.5vw 0 1.5vw;
+    padding: 1.5vh 0 1.5vh 0;
+}
+.about_container #row0 {
+    height: 50vh;
+}
+.about_container #row1 {
+    height: 60vh;
+    justify-content: right;
+}

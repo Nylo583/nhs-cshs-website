@@ -1,0 +1,13 @@
+<div class="navbar" id="navbar">
+    <a href="/"><img src="/static/assets/placeholder_logo.png" class="logo"></a>
+    <h1>Computer Science Honor Society</h1>
+    <div class="links">
+        <ul>
+            {% for item in nav.top %}
+                <li>
+                    <a class="navlink{{ ' active' if item.is_active else '' }}" href="{{ item.url }}">{{ item.label }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

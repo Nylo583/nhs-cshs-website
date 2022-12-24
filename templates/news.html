@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    {{metadata|safe}}
+    <title>News - CSHS</title>
+    <script src="/static/scripts/news.js" defer></script>
+</head>
+
+<body class="news">
+
+    {{nav|safe}}
+
+    {%for i in range(length)%}
+        <div class="post" id="post{{i}}">
+            <img src="/static/assets/{{posts[i]['img']}}.webp" alt="{{posts[i]['imgDesc']}}" class="postimg">
+            <div class="embedtext">
+                <h1 class="posttitle">{{posts[i]['title']}}</h1>
+                <h3 class="posttime">{{posts[i]['timestamp']}}</h3>
+                <p class="postbody">{{posts[i]['body']|safe}}</p>
+            </div>
+        </div>
+    {%endfor%}
+
+    {{footer|safe}}
+    {{scrollTop|safe}}
+</body>
+
+</html>
