@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title>Post Manager - CSHS</title>
+    <!--<script src="/static/scripts/postManager.js" defer></script>-->
+</head>
+
+<body class="postManager">
+  <form action="/posts/{{id}}/manage" method="post">
+    <h4>Post Title:</h4>
+    <input type="text" name="title" value="{{title}}" />
+    <h4>Post Content: (Markdown)</h4>
+    <textarea name="markup" rows="30" cols="70">{{markup}}</textarea>
+    <h4>Post Image: (optionally leave blank for no image)</h4>
+    <input type="text" name="img" value="{{img}}" />
+    <h4>Image Description: (for accessibility)</h4>
+    <input type="text" name="imgDesc" value="{{imgDesc}}" />
+    <br>
+    <br>
+    <input type="submit" value="Save">
+  </form>
+</html>

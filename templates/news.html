@@ -11,10 +11,13 @@
 <body class="news">
 
     {{nav|safe}}
-
+    <br>
+    <br>
     {%for i in range(length)%}
         <div class="post" id="post{{i}}">
+          {% if posts[i]['imgDesc'] != '' %}
             <img src="/static/assets/{{posts[i]['img']}}.webp" alt="{{posts[i]['imgDesc']}}" class="postimg">
+          {% endif %}
             <div class="embedtext">
                 <h1 class="posttitle">{{posts[i]['title']}}</h1>
                 <h3 class="posttime">{{posts[i]['timestamp']}}</h3>
